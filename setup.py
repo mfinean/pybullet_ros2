@@ -21,7 +21,7 @@ setup(
         (f"share/{package_name}/config", glob.glob("config/*")),
     ],
     install_requires=["setuptools"],
-    zip_safe=True,
+    zip_safe=False,  # Force setuptools to install as directory
     maintainer="Jafar Uruç",
     maintainer_email="jafar.uruc@gmail.com",
     description="A ROS2 interface to PyBullet",
