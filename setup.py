@@ -17,7 +17,7 @@ setup(
             [f"resource/{package_name}"],
         ),
         (f"share/{package_name}", ["package.xml"]),
-        (f"share/{package_name}/launch", glob.glob("launch/*.launch.py")),
+        (f"share/{package_name}/launch", glob.glob("launch/*")),
         (f"share/{package_name}/config", glob.glob("config/*")),
     ],
     install_requires=["setuptools"],
