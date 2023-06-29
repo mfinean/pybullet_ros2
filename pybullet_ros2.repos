@@ -4,3 +4,11 @@ repositories:
      type: git
      url: git@github.com:JafarAbdi/pybullet_ros2.git
      version: main
+  moveit_resources:
+     type: git
+     url: https://github.com/ros-planning/moveit_resources.git
+     version: humble
+  topic_based_ros2_control:
+     type: git
+     url: https://github.com/PickNikRobotics/topic_based_ros2_control.git
+     version: main
