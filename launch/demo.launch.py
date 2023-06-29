@@ -126,6 +126,11 @@ def generate_launch_description() -> LaunchDescription:
 
     return LaunchDescription(
         [
+            DeclareLaunchArgument(
+                "enable_gui",
+                default_value="true",
+                description="Whether to start Pybullet GUI",
+            ),
             pybullet_node,
             rviz_node,
             static_tf_node,
@@ -135,10 +140,5 @@ def generate_launch_description() -> LaunchDescription:
             joint_state_broadcaster_spawner,
             panda_arm_controller_spawner,
             panda_hand_controller_spawner,
-            DeclareLaunchArgument(
-                "enable_gui",
-                default_value="true",
-                description="Whether to start Pybullet GUI",
-            ),
         ],
     )
